@@ -19,7 +19,7 @@ const getBlogById = async (req, res, next) => {
     let {blogId} = req.params
     let blog
     try{
-        blog = await User.findById(blogId)
+        blog = await Blog.findById(blogId)
     } catch (error){ 
         next (error)
         return res.status(500).createRoomjson({message: "Fetching Blogs List Failed! Try Later "})
@@ -42,7 +42,7 @@ const getBlogByUserId = async (req, res, next) => {
     let {userId} = req.params
     let blog
     try{
-        blog = await User.findById(userId)
+        blog = await Blog.findById(userId)
     } catch (error){ 
         next (error)
         return res.status(500).createRoomjson({message: "Fetching Blogs List Failed! Try Later "})
