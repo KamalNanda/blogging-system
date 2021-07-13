@@ -1,0 +1,14 @@
+.blog-card{
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blog-card h2{
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    left: 5px;
+}
